@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reactive</title>
+</head>
+<body>
+<div id="container"></div>
+<script type="application/javascript">
+    var container = document.getElementById("container");
+    new EventSource("/reactive/test").onmessage = function (e) {
+        container.innerHTML = container.innerHTML + "<br/>" + e.data;
+    };
+</script>
+</body>
+</html>
