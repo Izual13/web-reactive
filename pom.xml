@@ -104,7 +104,7 @@
                     <exposes>
                         <expose>8080</expose>
                     </exposes>
-                    <imageName>192.168.0.103:5000/${project.artifactId}</imageName>
+                    <imageName>localhost:5000/${project.artifactId}</imageName>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
